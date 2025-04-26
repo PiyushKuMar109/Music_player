@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>APNA Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style2.css"> <!-- Replace "css/style.css" with your actual CSS file path -->
+</head>
+<body class="wrapper">
+    <header>  
+        <button class="hdbtn ">
+            <i class="fas fa-list"></i>
+        </button>
+     
+ 
+  
+    <!-- Album Selection -->
+    <div class="album-selection">
+        <button class="album-btn" data-album="BOLLYWOOD">BOLLYWOOD</button>
+        <button class="album-btn" data-album="PUNJABI">PUNJABI</button>
+        <button class="album-btn" data-album="ENGLISH">ENGLISH</button>
+    </div>
+
+    <!-- Album Details Container -->
+    <div class="album-details">
+        <div class="player">
+            <div class="image-area">
+                <img src="https://imgs.search.brave.com/B0ad1EDzFUOj_m9bor2cGOVPzFJcGcaBFadqhnP42_0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jLnNh/YXZuY2RuLmNvbS8w/MjIvSGVlcml5ZS1m/ZWF0LUFyaWppdC1T/aW5naC1IaW5kaS0y/MDIzLTIwMjMwOTI4/MDUwNDA1LTUwMHg1/MDAuanBn" alt="Song Image">
+            </div>
+
+            <div class="song-details">
+                <h1 class="name">Heeriye</h1>
+                <h3 class="artist">Arijit Singh</h3>
+            </div>
+
+            <div class="audio-controls">
+                <div class="song-timer">
+                    <span class="current-timer">0:00</span>
+                    <span class="max-timer">3:19</span>
+                </div>
+                <div class="progress-area">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="controls">
+                    <button class="btnc" id="prev">
+                        <i class="fas fa-backward"></i>
+                    </button>
+                    <button class="play-pause btnc" id="play-pause">
+                        <i class="faks fsa-lay"></i>
+                    </button>
+                    <button class="btnc" id="next">
+                        <i class="fas fa-forward"></i>
+                    </button>
+            <div class="volume-control">
+                <i class="fas fa-volume-up"></i> <!-- Volume icon -->
+                <input type="range" min="0" max="1" step="0.1" value="1" id="volume-slider">
+            </div>
+            <audio id="main-audio" src=""></audio>
+        </div>
+    </div>
+
+    <script src="js.js"></script> <!-- Replace "js.js" with your actual JavaScript file path -->
+</body>
+</html>
